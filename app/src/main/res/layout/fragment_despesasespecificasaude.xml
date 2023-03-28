@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teladespesaespecificasaude"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context=".Despesasespecificasaude" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ibtnVoltar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC"
+                android:onClick="telaDespesas"
+                android:src="@drawable/seta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.093"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.029" />
+
+            <ImageView
+                android:id="@+id/imageView58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="736dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView60"
+                app:srcCompat="@drawable/arabesco2" />
+
+            <TextView
+                android:id="@+id/txtDespesas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDespesa"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.117"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.072" />
+
+            <ImageView
+                android:id="@+id/imageView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arabesco1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/btnPerfil4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC"
+                android:onClick="telaPerfil"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.783"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.014"
+                app:srcCompat="@drawable/simboloperfil" />
+
+            <ImageView
+                android:id="@+id/imageView60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/graficosaldosaude"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.152" />
+
+            <ImageView
+                android:id="@+id/imageView63"
+                android:layout_width="562dp"
+                android:layout_height="683dp"
+                android:src="@drawable/caixasaudeespecifica"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.737" />
+
+            <TextView
+                android:id="@+id/txtValorDespesaEspecifica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtprecosaude"
+                android:textColor="#000000"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.38" />
+
+            <TextView
+                android:id="@+id/txtCategoriaDespesaEspecifica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtbtncaixa2"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.499"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.339" />
+
+            <EditText
+                android:id="@+id/edtNomeDespesaEspecifica"
+                android:layout_width="370dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:hint="@string/txtDestinatarioPagamentoSaude"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView63"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.482"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView63"
+                app:layout_constraintVertical_bias="0.421" />
+
+            <ImageView
+                android:id="@+id/imageView59"
+                android:layout_width="554dp"
+                android:layout_height="74dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.347"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.985"
+                app:srcCompat="@drawable/basetabbar" />
+
+            <ImageButton
+                android:id="@+id/btnConfiguracao5"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
+                android:background="#FEFEFE"
+                android:onClick="telaPerfil"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView59"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.778"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView59"
+                app:layout_constraintVertical_bias="0.29"
+                app:srcCompat="@drawable/simboloconfiguracao" />
+
+            <ImageButton
+                android:id="@+id/btnInvestimento5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FEFEFE"
+                android:onClick="telaTransacao"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView59"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.475"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView59"
+                app:layout_constraintVertical_bias="0.352"
+                app:srcCompat="@drawable/simbolodinheiro" />
+
+            <ImageButton
+                android:id="@+id/btnDespesas5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FEFEFE"
+                android:onClick="telaDespesas"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView59"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.31"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView59"
+                app:layout_constraintVertical_bias="0.363"
+                app:srcCompat="@drawable/simbolocartao" />
+
+            <ImageButton
+                android:id="@+id/btnHome5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FEFEFE"
+                android:onClick="telaHome"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView59"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.184"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView59"
+                app:layout_constraintVertical_bias="0.285"
+                app:srcCompat="@drawable/simbolohome" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="54dp"
+                android:layout_height="46dp"
+                android:background="#FEFEFE"
+                android:src="@drawable/simboloajuda"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView59"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView59"
+                app:layout_constraintVertical_bias="0.321" />
+
+            <EditText
+                android:id="@+id/edtDataDespesaEspecifica"
+                android:layout_width="361dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="@string/txtDataPagamentoSaude"
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView63"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.465"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView63"
+                app:layout_constraintVertical_bias="0.578" />
+
+            <Button
+                android:id="@+id/btnPagar"
+                android:layout_width="338dp"
+                android:layout_height="67dp"
+                android:backgroundTint="#D2ECA7"
+                android:onClick="telaPagamento"
+                android:text="@string/txtPagamento"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView63"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView63"
+                app:layout_constraintVertical_bias="0.923" />
+
+            <Spinner
+                android:id="@+id/spinnerCategoria"
+                android:layout_width="321dp"
+                android:layout_height="37dp"
+                android:entries="@array/categoria"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView63"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.403"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView63"
+                app:layout_constraintVertical_bias="0.718" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

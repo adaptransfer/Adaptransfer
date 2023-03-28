@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/telainicial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3D5D5"
+    tools:context=".TelaInicial" >
+
+    <ImageView
+        android:id="@+id/imageView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arabesco3"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <ImageView
+        android:id="@+id/imageView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logorosa"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <TextView
+        android:id="@+id/txtAdaptransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adaptransfer"
+        android:textColor="#C1527B"
+        android:textSize="38sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="457dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

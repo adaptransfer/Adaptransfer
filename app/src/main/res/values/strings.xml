@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Adaptransfer</string>
+    <string name="txtOlaHome">Olá, bem-vindo</string>
+    <string name="txtNomeusuario">Usuário digital</string>
+    <string name="txtcifraoHome">R$</string>
+    <string name="txtsaldovalor">3000,00</string>
+    <string name="txtsaldototal">Saldo total disponível</string>
+    <string name="txtCategoriaCartao">Salário</string>
+    <string name="txtPessoa1">Fernanda</string>
+    <string name="txtPessoa2">Hugo</string>
+    <string name="txtPessoa3">Marcelo</string>
+    <string name="txtPessoa4">Bruna</string>
+    <string name="ibntEnviar">Enviar dinheiro</string>
+    <string name="ibntReceber">Receber dinheiro</string>
+    <string name="ibntHistorico">Histórico</string>
+    <string name="txtTransacao">Transações</string>
+    <string name="txtCategoriaCartao2">Alimentação</string>
+    <string name="txtNomeHistorico">Heitor Kobrem</string>
+    <string name="txtNomeHistorico2">Breno Sanches</string>
+    <string name="txtNomeHistorico3">Jennifer Cristina Neves</string>
+    <string name="txtDescricaoHistorico">Enviou um pix de R$37.56 para você</string>
+    <string name="txtDescricaoHistorico2">Confirmou o recebimento da sua transação</string>
+    <string name="txtbtnContas">Contas</string>
+    <string name="txtDespesa">Despesas</string>
+    <string name="txtbtnRenda">Renda</string>
+    <string name="txtbtncaixa1">Alimentação</string>
+    <string name="txtbtncaixa2">Saúde</string>
+    <string name="txtbtncaixa3">Água/Esgoto</string>
+    <string name="txtbtncaixa4">Energia</string>
+    <string name="txtbtncaixa5">Internet</string>
+    <string name="txtbtncaixa6">Lazer</string>
+    <string name="txtvencimento"> - vence em</string>
+    <string name="txtvencido"> - vencido em</string>
+    <string name="txtesperandoboleto"> - esperando boleto cair</string>
+    <string name="txtdata">00/00/0000</string>
+    <string name="txtpagar">pagar</string>
+    <string name="txtpagarcomatrado">pagar com atraso</string>
+    <string name="txtvisualizar">visualizar</string>
+    <string name="txtprecoalimentacao">- R$400</string>
+    <string name="txtprecosaude">- R$125</string>
+    <string name="txtprecoagua">- R$81</string>
+    <string name="txtprecoenergia">- R$235.78</string>
+    <string name="txtprecointernet">- R$199.99</string>
+    <string name="txtprecolazer">- R$50</string>
+    <string name="txtDescricaoHistorico3">Enviou um pix de R$10.00 para você</string>
+    <string name="txtLoginEmail">Insira seu E-mail</string>
+    <string name="txtLoginSenha">Digite a senha</string>
+    <string name="txtLoginContinuar">Continuar</string>
+    <string name="txtLoginCriarConta">Criar conta</string>
+    <string name="txtLoginEsqueceuSenha">Esqueceu a senha?</string>
+    <string name="txtCriarContaNome">Nome Completo</string>
+    <string name="txtCriarContaData">Data de nascimento</string>
+    <string name="txtCriarContaCPF">CPF</string>
+    <string name="txtCriarContaTelefone">Telefone</string>
+    <string name="txtCriarContaCadastrar">Cadastrar</string>
+    <string name="txtCriarContaEmail">Email</string>
+    <string name="txtCriarContaSenha">Senha</string>
+    <string name="txtDeletarContaPerfil">Deletar Conta</string>
+    <string name="txtAdicionarContaPerfil">Adicionar Conta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnConcluir">Concluir</string>
+    <string name="edNome">Nome do destinatário:</string>
+    <string name="edtID">ID do destinatário:</string>
+    <string name="edtValor">Valor:</string>
+    <string name="spinnerCategoria">Categoria:</string>
+    <string name="edtMotivo">Motivo/Descrição da transação:</string>
+    <string name="txtSaldoTotalD">Saldo disponível: R$3000.00:</string>
+    <string name="txtdestinatario">Destinatário</string>
+    <string name="txtnomedestinatario">Fernanda</string>
+    <string name="txtvalor">Valor</string>
+    <string name="txtvalornumero">R$139.40</string>
+    <string name="btnrepetir">Repetir</string>
+    <string name="btnaddfavoritos">Adicionar aos favoritos</string>
+    <string name="btnbaixarrecibo">Baixar recibo</string>
+    <string name="btnvoltar">Voltar</string>
+    <string name="txtQuantidadedeNotificacao">Você tem</string>
+    <string name="txtQuantidadedeNotificacao2">3 novas</string>
+    <string name="txtNotificacao">notificações</string>
+    <string name="txtnotificacaopessoanome1">Christian Rafael</string>
+    <string name="txtnotificacaotexto1">Enviou um pix de R$237.50 para você</string>
+    <string name="txtnotificacaotexto2">Enviou um boleto de R$330.55 para você</string>
+    <string name="txtnotificacaopessoanome2">Mariana Matos</string>
+    <string name="txtvalidacao">Você conhece</string>
+    <string name="txtvalidacaoinformacao">Está tentando realizar uma transação para você</string>
+    <string name="txtconfirmacaorecebimentotransacao">Transação aprovada com sucesso</string>
+    <string name="txtconfirmacaorecebimentotransacaoremetente">Remetente</string>
+    <string name="txtconfirmacaorecebimentotransacaovalor">R$645.28</string>
+    <string name="txtconfirmacaorecebimentotransacaoenviar">Enviar mensagem</string>
+    <string name="txtDestinatarioPagamentoSaude">Nome do destinatário:</string>
+    <string name="txtDataPagamentoSaude">Data de vencimento:</string>
+    <string name="txtPagamento">Pagar</string>
+    <string name="txtConfirmarEsqueceuSenha">Confirmar Senha</string>
+    <string name="txtNovaSenhaEsqueceuSenha">Nova Senha</string>
+    <string name="txtDefinirSenhaEsqueceuSenha">Definir Senha</string>
+    <string-array name="categoria">
+        <item>Educação</item>
+        <item>Saúde</item>
+        <item>Alimentação</item>
+        <item>Lazer</item>
+        <item>Segurança</item>
+        <item>Água/Esgoto</item>
+        <item>Energia</item>
+        <item>Internet</item>
+        <item>Cartão</item>
+        <item>Transporte</item>
+        <item>Dívida</item>
+        <item>Investimento</item>
+        <item>Cuidados Pessoais</item>
+        <item>Emergência</item>
+        <item>Outros</item>
+    </string-array>
+    <string name="aya">Aya</string>
+    <string name="assistente_virtual">Assistente virtual</string>
+    <string name="tirar_foto">Tirar Foto</string>
+    <string name="finalizar">Finalizar</string>
+</resources>

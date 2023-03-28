@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teladespesas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context=".Despesas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ibtnCaixaDespesas"
+                android:layout_width="687dp"
+                android:layout_height="385dp"
+                android:background="#ECECEC"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.932"
+                app:srcCompat="@drawable/caixaprazosdespesa" />
+
+            <TextView
+                android:id="@+id/txtAlimentacao2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtbtncaixa1"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.271"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ibtnCaixaDespesas"
+                app:layout_constraintVertical_bias="0.29" />
+
+            <TextView
+                android:id="@+id/txtSaude2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtbtncaixa2"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.27"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.48" />
+
+            <TextView
+                android:id="@+id/txtEnergia2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtbtncaixa4"
+                android:textColor="#F44336"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.256"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.67" />
+
+            <TextView
+                android:id="@+id/txtInternet2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtbtncaixa5"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.258"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.857" />
+
+            <TextView
+                android:id="@+id/txtAlimentacaoVence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtvencimento"
+                android:textColor="#838383"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.298" />
+
+            <TextView
+                android:id="@+id/txtEnergiaVencido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtvencido"
+                android:textColor="#F44336"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.67" />
+
+            <TextView
+                android:id="@+id/txtSaudeVence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtvencimento"
+                android:textColor="#838383"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.422"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.48" />
+
+            <TextView
+                android:id="@+id/txtInternetEspera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtesperandoboleto"
+                android:textColor="#838383"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.537"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.857" />
+
+            <TextView
+                android:id="@+id/txtAlimentacaoPrazo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtdata"
+                android:textColor="#838383"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.652"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ibtnCaixaDespesas"
+                app:layout_constraintVertical_bias="0.29" />
+
+            <TextView
+                android:id="@+id/txtSaudePrazo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtdata"
+                android:textColor="#838383"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.633"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.48" />
+
+            <TextView
+                android:id="@+id/txtEnergiaPrazo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtdata"
+                android:textColor="#F44336"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.659"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.67" />
+
+            <Button
+                android:id="@+id/btnPagarAlimentacao"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:backgroundTint="#FEFEFE"
+                android:text="@string/txtpagar"
+                android:textColor="#4CAF50"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ibtnCaixaDespesas"
+                app:layout_constraintVertical_bias="0.276" />
+
+            <Button
+                android:id="@+id/btnPagarSaude"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:backgroundTint="#FEFEFE"
+                android:onClick="telaSaude"
+                android:text="@string/txtpagar"
+                android:textColor="#4CAF50"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ibtnCaixaDespesas"
+                app:layout_constraintVertical_bias="0.473" />
+
+            <Button
+                android:id="@+id/btnPagarEnergia"
+                android:layout_width="70dp"
+                android:layout_height="47dp"
+                android:backgroundTint="#FEFEFE"
+                android:text="@string/txtpagarcomatrado"
+                android:textColor="#F44336"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.688" />
+
+            <Button
+                android:id="@+id/btnPagarInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="264dp"
+                android:backgroundTint="#FEFEFE"
+                android:text="@string/txtvisualizar"
+                android:textColor="#4CAF50"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.922"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.38" />
+
+            <ImageButton
+                android:id="@+id/ibntDespesaAlimentacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.424"
+                app:srcCompat="@drawable/caixaalimentacao" />
+
+            <TextView
+                android:id="@+id/txtAlimentacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtbtncaixa1"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ibntDespesaAlimentacao"
+                app:layout_constraintEnd_toEndOf="@+id/ibntDespesaAlimentacao"
+                app:layout_constraintHorizontal_bias="0.478"
+                app:layout_constraintStart_toStartOf="@+id/ibntDespesaAlimentacao"
+                app:layout_constraintTop_toTopOf="@+id/ibntDespesaAlimentacao"
+                app:layout_constraintVertical_bias="0.485" />
+
+            <TextView
+                android:id="@+id/txtValorAlimentacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtprecoalimentacao"
+                android:textColor="#838383"
+                app:layout_constraintBottom_toBottomOf="@+id/ibntDespesaAlimentacao"
+                app:layout_constraintEnd_toEndOf="@+id/ibntDespesaAlimentacao"
+                app:layout_constraintHorizontal_bias="0.436"
+                app:layout_constraintStart_toStartOf="@+id/ibntDespesaAlimentacao"
+                app:layout_constraintTop_toTopOf="@+id/ibntDespesaAlimentacao"
+                app:layout_constraintVertical_bias="0.707" />
+
+            <ImageButton
+                android:id="@+id/ibntDespesaEnergia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.605"
+                app:srcCompat="@drawable/caixaluz" />
+
+            <TextView
+                android:id="@+id/txtEnergia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtbtncaixa4"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ibntDespesaEnergia"
+                app:layout_constraintEnd_toEndOf="@+id/ibntDespesaEnergia"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="@+id/ibntDespesaEnergia"
+                app:layout_constraintTop_toTopOf="@+id/ibntDespesaEnergia"
+                app:layout_constraintVertical_bias="0.496" />
+
+            <TextView
+                android:id="@+id/txtValorEnergia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtprecoenergia"
+                android:textColor="#838383"
+                app:layout_constraintBottom_toBottomOf="@+id/ibntDespesaEnergia"
+                app:layout_constraintEnd_toEndOf="@+id/ibntDespesaEnergia"
+                app:layout_constraintHorizontal_bias="0.514"
+                app:layout_constraintStart_toStartOf="@+id/ibntDespesaEnergia"
+                app:layout_constraintTop_toTopOf="@+id/ibntDespesaEnergia"
+                app:layout_constraintVertical_bias="0.734" />
+
+            <ImageButton
+                android:id="@+id/ibtnDespesaInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.514"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.603"
+                app:srcCompat="@drawable/caixawifi" />
+
+            <ImageButton
+                android:id="@+id/ibtnDespesaLazer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.971"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.606"
+                app:srcCompat="@drawable/caixalazer" />
+
+            <TextView
+                android:id="@+id/txtLazer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtbtncaixa6"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ibtnDespesaLazer"
+                app:layout_constraintEnd_toEndOf="@+id/ibtnDespesaLazer"
+                app:layout_constraintStart_toStartOf="@+id/ibtnDespesaLazer"
+                app:layout_constraintTop_toTopOf="@+id/ibtnDespesaLazer"
+                app:layout_constraintVertical_bias="0.492" />
+
+            <TextView
+                android:id="@+id/txtValorLazer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtprecolazer"
+                android:textColor="#838383"
+                app:layout_constraintBottom_toBottomOf="@+id/ibtnDespesaLazer"
+                app:layout_constraintEnd_toEndOf="@+id/ibtnDespesaLazer"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="@+id/ibtnDespesaLazer"
+                app:layout_constraintTop_toTopOf="@+id/ibtnDespesaLazer"
+                app:layout_constraintVertical_bias="0.735" />
+
+            <ImageButton
+                android:id="@+id/ibntDespesaAgua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.971"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.424"
+                app:srcCompat="@drawable/caixaagua" />
+
+            <TextView
+                android:id="@+id/txtAguaEsgoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtbtncaixa3"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ibntDespesaAgua"
+                app:layout_constraintEnd_toEndOf="@+id/ibntDespesaAgua"
+                app:layout_constraintHorizontal_bias="0.55"
+                app:layout_constraintStart_toStartOf="@+id/ibntDespesaAgua"
+                app:layout_constraintTop_toTopOf="@+id/ibntDespesaAgua" />
+
+            <TextView
+                android:id="@+id/txtValorAguaEsgoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtprecoagua"
+                android:textColor="#838383"
+                app:layout_constraintBottom_toBottomOf="@+id/ibntDespesaAgua"
+                app:layout_constraintEnd_toEndOf="@+id/ibntDespesaAgua"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="@+id/ibntDespesaAgua"
+                app:layout_constraintTop_toTopOf="@+id/ibntDespesaAgua"
+                app:layout_constraintVertical_bias="0.7" />
+
+            <ImageButton
+                android:id="@+id/ibntDespesaSaude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC"
+                android:onClick="telaSaude"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.521"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.424"
+                app:srcCompat="@drawable/caixasaude" />
+
+            <ImageView
+                android:id="@+id/imageView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/arabesco2"
+                tools:layout_editor_absoluteX="-7dp"
+                tools:layout_editor_absoluteY="1199dp" />
+
+            <ImageView
+                android:id="@+id/imageView57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.62"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.987"
+                app:srcCompat="@drawable/basetabbar" />
+
+            <ImageButton
+                android:id="@+id/btnHome4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FEFEFE"
+                android:onClick="telaHome"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="@+id/imageView57"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintStart_toStartOf="@+id/imageView57"
+                app:layout_constraintTop_toTopOf="@+id/imageView57"
+                app:layout_constraintVertical_bias="0.451"
+                app:srcCompat="@drawable/simbolohome" />
+
+            <ImageButton
+                android:id="@+id/btnConfiguracao4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FEFEFE"
+                android:onClick="telaPerfil"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="@+id/imageView57"
+                app:layout_constraintHorizontal_bias="0.913"
+                app:layout_constraintStart_toStartOf="@+id/imageView57"
+                app:layout_constraintTop_toTopOf="@+id/imageView57"
+                app:layout_constraintVertical_bias="0.32"
+                app:srcCompat="@drawable/simboloconfiguracao" />
+
+            <ImageButton
+                android:id="@+id/ibtnTransacao4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FEFEFE"
+                android:onClick="telaTransacao"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="@+id/imageView57"
+                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintStart_toStartOf="@+id/imageView57"
+                app:layout_constraintTop_toTopOf="@+id/imageView57"
+                app:layout_constraintVertical_bias="0.26"
+                app:srcCompat="@drawable/simbolodinheiro" />
+
+            <ImageButton
+                android:id="@+id/btnDespesas4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FEFEFE"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="@+id/imageView57"
+                app:layout_constraintHorizontal_bias="0.234"
+                app:layout_constraintStart_toStartOf="@+id/imageView57"
+                app:layout_constraintTop_toTopOf="@+id/imageView57"
+                app:layout_constraintVertical_bias="0.363"
+                app:srcCompat="@drawable/simbolocartao" />
+
+            <ImageButton
+                android:id="@+id/ibtnVoltar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC"
+                android:onClick="telaHome"
+                android:src="@drawable/seta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.079"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.032" />
+
+            <ImageButton
+                android:id="@+id/btnPerfil3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F2ECFC"
+                android:onClick="telaPerfil"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.772"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.012"
+                app:srcCompat="@drawable/simboloperfil" />
+
+            <ImageView
+                android:id="@+id/imageView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/arabesco1" />
+
+            <ImageView
+                android:id="@+id/imageView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.148"
+                app:srcCompat="@drawable/graficod" />
+
+            <ImageView
+                android:id="@+id/imageView62"
+                android:layout_width="306dp"
+                android:layout_height="51dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.532"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.322"
+                app:srcCompat="@drawable/sombra" />
+
+            <Button
+                android:id="@+id/btnContas"
+                android:layout_width="139dp"
+                android:layout_height="49dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/txtbtnContas"
+                android:textColor="#3E3E3E"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.216"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32" />
+
+            <Button
+                android:id="@+id/btnRenda"
+                android:layout_width="139dp"
+                android:layout_height="49dp"
+                android:backgroundTint="#D0D0D0"
+                android:text="@string/txtbtnRenda"
+                android:textColor="#737171"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.775"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.321" />
+
+            <TextView
+                android:id="@+id/txtDespesas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDespesa"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.162"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.073" />
+
+            <TextView
+                android:id="@+id/txtSaude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtbtncaixa2"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ibntDespesaSaude"
+                app:layout_constraintEnd_toEndOf="@+id/ibntDespesaSaude"
+                app:layout_constraintHorizontal_bias="0.46"
+                app:layout_constraintStart_toStartOf="@+id/ibntDespesaSaude"
+                app:layout_constraintTop_toTopOf="@+id/ibntDespesaSaude"
+                app:layout_constraintVertical_bias="0.485" />
+
+            <TextView
+                android:id="@+id/txtValorSaude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtprecosaude"
+                android:textColor="#838383"
+                app:layout_constraintBottom_toBottomOf="@+id/ibntDespesaSaude"
+                app:layout_constraintEnd_toEndOf="@+id/ibntDespesaSaude"
+                app:layout_constraintHorizontal_bias="0.472"
+                app:layout_constraintStart_toStartOf="@+id/ibntDespesaSaude"
+                app:layout_constraintTop_toTopOf="@+id/ibntDespesaSaude"
+                app:layout_constraintVertical_bias="0.707" />
+
+            <TextView
+                android:id="@+id/txtInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtbtncaixa5"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintEnd_toEndOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintHorizontal_bias="0.442"
+                app:layout_constraintStart_toStartOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintTop_toTopOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.507" />
+
+            <TextView
+                android:id="@+id/txtValorInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtprecointernet"
+                android:textColor="#838383"
+                app:layout_constraintBottom_toBottomOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintEnd_toEndOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintHorizontal_bias="0.514"
+                app:layout_constraintStart_toStartOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintTop_toTopOf="@+id/ibtnDespesaInternet"
+                app:layout_constraintVertical_bias="0.75" />
+
+            <ImageButton
+                android:id="@+id/ibtnAjuda3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FEFEFE"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView57"
+                app:layout_constraintEnd_toEndOf="@+id/imageView57"
+                app:layout_constraintHorizontal_bias="0.693"
+                app:layout_constraintStart_toStartOf="@+id/imageView57"
+                app:layout_constraintTop_toTopOf="@+id/imageView57"
+                app:layout_constraintVertical_bias="0.263"
+                app:srcCompat="@drawable/simboloajuda" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

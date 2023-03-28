@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/telalogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE2F4"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView65"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/sejabemvindo" />
+
+    <ImageView
+        android:id="@+id/imageView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="208dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCriarConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/caixalogin" />
+
+    <ImageButton
+        android:id="@+id/ibtnFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:background="#EDE1F3"
+        app:layout_constraintBottom_toTopOf="@+id/btnCriarConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView65"
+        app:layout_constraintVertical_bias="0.524"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageButton
+        android:id="@+id/ibtnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#EDE1F3"
+        app:layout_constraintBottom_toTopOf="@+id/btnCriarConta"
+        app:layout_constraintEnd_toStartOf="@+id/ibtnFacebook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtOu"
+        app:srcCompat="@drawable/google" />
+
+    <Button
+        android:id="@+id/btnCriarConta"
+        android:layout_width="257dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E6BDFF"
+        android:text="@string/txtLoginCriarConta"
+        android:onClick="telaCriarConta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogar"
+        android:layout_width="210dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#E6BDFF"
+        android:text="@string/txtLoginContinuar"
+        android:onClick="telaHome"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView65"
+        app:layout_constraintEnd_toEndOf="@+id/imageView65"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="@+id/imageView65"
+        app:layout_constraintTop_toTopOf="@+id/imageView65"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <EditText
+        android:id="@+id/edtEmailLogin"
+        android:layout_width="231dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:hint="@string/txtLoginEmail"
+        android:inputType="textWebEmailAddress|textEmailAddress"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogar"
+        app:layout_constraintEnd_toEndOf="@+id/imageView65"
+        app:layout_constraintStart_toStartOf="@+id/imageView65"
+        app:layout_constraintTop_toTopOf="@+id/imageView65" />
+
+    <EditText
+        android:id="@+id/edtSenhaLogin"
+        android:layout_width="223dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/txtLoginSenha"
+        android:inputType="textPassword|textWebPassword"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogar"
+        app:layout_constraintEnd_toEndOf="@+id/imageView65"
+        app:layout_constraintStart_toStartOf="@+id/imageView65"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailLogin" />
+
+    <TextView
+        android:id="@+id/txtOu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ou"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtContinuarCom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogar"
+        app:layout_constraintVertical_bias="0.683" />
+
+    <TextView
+        android:id="@+id/txtContinuarCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="continuar com"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnCriarConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView65"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="63dp"
+        android:layout_height="65dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902" />
+</androidx.constraintlayout.widget.ConstraintLayout>
