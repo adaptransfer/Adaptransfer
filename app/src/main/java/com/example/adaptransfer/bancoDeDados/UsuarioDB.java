@@ -37,6 +37,7 @@ public class UsuarioDB extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 
+    //quando criar a tela
     public boolean create(Usuario usuario){
         boolean result = true;
         try{
