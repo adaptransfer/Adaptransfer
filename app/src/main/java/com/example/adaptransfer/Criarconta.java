@@ -1,10 +1,12 @@
 package com.example.adaptransfer;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
@@ -15,18 +17,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
-import com.google.firebase.auth.FirebaseAuthUserCollisionException;
-import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
+import com.example.adaptransfer.bancoDeDados.Usuario;
+import com.example.adaptransfer.bancoDeDados.UsuarioDB;
+
 
 import java.util.HashMap;
 import java.util.Map;
@@ -59,32 +52,63 @@ public class Criarconta extends AppCompatActivity {
 
                 bt_cadastrar_onClick(view);
 
-                String nome = edit_nome.getText().toString();
-                String email = edit_email.getText().toString();
-                String cpf = edit_cpf.getText().toString();
-                String data_nasc = edit_data_nasc.getText().toString();
-                String telefone = edit_telefone.getText().toString();
-                String senha = edit_senha.getText().toString();
-
-
-
-                if(nome.isEmpty() || email.isEmpty() || senha.isEmpty() || cpf.isEmpty() || data_nasc.isEmpty() || telefone.isEmpty()){
-                    /*Se algum campo estiver vazio erá mostrar a mensagem de  preencher todos os campos*/
-                    Snackbar snackbar = Snackbar.make(view,mensagens[0],Snackbar.LENGTH_SHORT);
-                    snackbar.setBackgroundTint(Color.WHITE);
-                    snackbar.setTextColor(Color.BLACK);
-                    snackbar.show();
-                }else{
-
-                }
-
             }
         });
 
     }
 
     public void bt_cadastrar_onClick(View view){
-
+        try {
+            UsuarioDB usuarioDB = new UsuarioDB(getApplicationContext());
+            Usuario usuario = new Usuario();
+            usuario.setCpf(edit_cpf.getText().toString());
+            usuario.setEmail(edit_email.getText().toString());
+            usuario.setSenha(edit_senha.getText().toString());
+            usuario.setNome(edit_nome.getText().toString());
+            usuario.setData_nasc(edit_data_nasc.getText().toString());
+            usuario.setTelefone(edit_telefone.getText().toString());
+            Usuario temp = usuarioDB.checkEmail(edit_senha.getText().toString());
+            if (temp == null) {
+                if (usuarioDB.create(usuario)) {
+                    Intent intent = new Intent(Criarconta.this, Login.class);
+                    startActivity(intent);
+                } else {
+                    /*mostra a impossibilidade de criar a conta*/
+                    AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+                    builder.setTitle("Erro");
+                    builder.setMessage("Erro ao criar conta");
+                    builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.cancel();
+                        }
+                    });
+                    builder.show();
+                }
+            }else{
+                AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+                builder.setTitle("Erro");
+                builder.setMessage("Email já cadastrado!");
+                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
+                builder.show();
+            }
+        }catch (Exception e){
+            AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+            builder.setTitle("Erro");
+            builder.setMessage(e.getMessage());
+            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    dialogInterface.cancel();
+                }
+            });
+            builder.show();
+        }
     }
 
     //método para chamar a tela login

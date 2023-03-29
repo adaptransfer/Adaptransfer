@@ -1,4 +1,4 @@
-package com.example.adaptransfer.objetos;
+package com.example.adaptransfer.bancoDeDados;
 
 import java.io.Serializable;
 

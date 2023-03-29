@@ -72,7 +72,6 @@
         android:layout_height="56dp"
         android:backgroundTint="#E6BDFF"
         android:text="@string/txtLoginContinuar"
-        android:onClick="telaHome"
         app:layout_constraintBottom_toBottomOf="@+id/imageView65"
         app:layout_constraintEnd_toEndOf="@+id/imageView65"
         app:layout_constraintHorizontal_bias="0.447"
