@@ -24,18 +24,6 @@ public class Despesasespecificasaude extends AppCompatActivity {
         startActivity(intent);
     }
 
-    //método para chamar a tela transação
-    public void telaTransacao(View view){
-        Intent intent = new Intent(this, Transacao.class);
-        startActivity(intent);
-    }
-
-    //método para chamar a tela Perfil
-    public void telaPerfil(View view){
-        Intent intent = new Intent(this, Perfil.class);
-        startActivity(intent);
-    }
-
     //método para chamar a tela despesas
     public void telaHome(View view){
         Intent intent = new Intent(this, MainActivity.class);

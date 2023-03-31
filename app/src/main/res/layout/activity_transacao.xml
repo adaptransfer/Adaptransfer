@@ -36,18 +36,16 @@
                 app:layout_constraintVertical_bias="0.027"
                 app:srcCompat="@drawable/seta" />
 
-            <ImageButton
-                android:id="@+id/btnPerfil2"
+            <ImageView
+                android:id="@+id/imageView73"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#FEFEFE"
-                android:onClick="telaPerfil"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.846"
+                app:layout_constraintHorizontal_bias="0.847"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.027"
+                app:layout_constraintVertical_bias="0.018"
                 app:srcCompat="@drawable/simboloperfil" />
 
             <ImageView

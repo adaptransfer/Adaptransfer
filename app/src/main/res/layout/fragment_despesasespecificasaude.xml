@@ -47,6 +47,18 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView60"
                 app:srcCompat="@drawable/arabesco2" />
 
+            <ImageView
+                android:id="@+id/imageView79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.751"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.013"
+                app:srcCompat="@drawable/simboloperfil" />
+
             <TextView
                 android:id="@+id/txtDespesas2"
                 android:layout_width="wrap_content"
@@ -72,20 +84,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
-
-            <ImageButton
-                android:id="@+id/btnPerfil4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#ECECEC"
-                android:onClick="telaPerfil"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.783"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.014"
-                app:srcCompat="@drawable/simboloperfil" />
 
             <ImageView
                 android:id="@+id/imageView60"

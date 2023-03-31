@@ -26,13 +26,6 @@ public class Transacao extends AppCompatActivity {
         startActivity(intent);
     }
 
-    //método para chamar a tela Perfil
-    public void telaPerfil(View view){
-        Intent intent = new Intent(this, Perfil.class);
-        startActivity(intent);
-    }
-
-
     //método para chamar a tela envio de transação9
     public void telaEnviar(View view){
         Intent intent = new Intent(this, TransacaoEnviar.class);

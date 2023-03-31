@@ -24,12 +24,6 @@ public class Recebimentotransacaoaprovada extends AppCompatActivity {
         startActivity(intent);
     }
 
-    //método para chamar a tela Perfil
-    public void telaPerfil(View view){
-        Intent intent = new Intent(this, Perfil.class);
-        startActivity(intent);
-    }
-
     //método para chamar a tela notificacao
     public void telaNotificacao(View view){
         Intent intent = new Intent(this, Notificacao.class);

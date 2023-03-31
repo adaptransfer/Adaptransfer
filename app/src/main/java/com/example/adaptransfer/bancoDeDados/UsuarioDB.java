@@ -39,7 +39,7 @@ public class UsuarioDB extends SQLiteOpenHelper {
 
     //quando criar a tela
     public boolean create(Usuario usuario){
-        boolean result = true;
+        boolean result = false;
         try{
             SQLiteDatabase sqLiteDatabase = getWritableDatabase();
             ContentValues contentValues = new ContentValues();
@@ -49,6 +49,10 @@ public class UsuarioDB extends SQLiteOpenHelper {
             contentValues.put(nomeColumn, usuario.getNome());
             contentValues.put(dataNascColumn, usuario.getData_nasc());
             contentValues.put(telefoneColumn, usuario.getTelefone());
+
+            if(sqLiteDatabase.insert(nomeTable, null, contentValues) != -1)
+                result = true;
+
         }catch (Exception e){
             result = false;
         }
